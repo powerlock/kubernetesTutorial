@@ -138,3 +138,16 @@ NOTES:
 ######            the Grafana pod is terminated.                            #####
 #################################################################################"
 
+10. check helm list
+`helm list`
+11. expose grafana
+`kubectl expose service grafana --type=NodePort --target-port=3000 --name=grafana-ext`
+run the service:
+`minikube service grafana-ext` 
+12. get grafana secretes for the future login.
+`kubectl get secret --namespace default grafana -o yaml`
+
+decrypt the password
+`echo RVdhYXJEcGh3bm0xNnNaRlBTOHd3UHFYOFROQkFXWjhHTDM5a1NKSQ==| openssl base64 -d ; echo`
+
+13. once logged in grafana
