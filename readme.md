@@ -150,4 +150,5 @@ run the service:
 decrypt the password
 `echo RVdhYXJEcGh3bm0xNnNaRlBTOHd3UHFYOFROQkFXWjhHTDM5a1NKSQ==| openssl base64 -d ; echo`
 
-13. once logged in grafana
+13. once logged in grafana you have opportunity to choose your dashboard. or you could use existing template for the dashboard. 
+https://grafana.com/grafana/dashboards/
